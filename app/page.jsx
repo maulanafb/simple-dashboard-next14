@@ -2,10 +2,12 @@ import Link from "next/link"
 
 const Homepage = () => {
   return (
-    <div>
-      <Link href={'/dashboard'}>
-        Goto dashboard
-      </Link>
+    <div style={{ display: 'flex', justifyContent: "center", alignItems: "center", flexDirection: "row", height: "100vh", borderRadius: "100px" }}>
+      <div style={{ padding: "5px 10px", backgroundColor: "teal", borderRadius: "50px" }}>
+        <Link href={'/dashboard'}>
+          <h1>Goto dashboard</h1>
+        </Link>
+      </div>
     </div>
   )
 }
