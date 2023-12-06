@@ -1,6 +1,6 @@
 import React from 'react'
-import styles from '@/app/ui/dashboard/products/addProduct/addProduct.module.css'
-const AddProductPage = () => {
+import styles from '@/app/ui/dashboard/users/addUser/addUser.module.css'
+const AddUserPage = () => {
     return (
         <div className={styles.container}>
             <form action="" className={styles.form}>
@@ -22,4 +22,4 @@ const AddProductPage = () => {
     )
 }
 
-export default AddProductPage
+export default AddUserPage
