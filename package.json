@@ -11,8 +11,13 @@
   "dependencies": {
     "@next/eslint-plugin-next": "14.0.1",
     "next": "14.0.1",
+    "nextjs-progressbar": "^0.0.16",
+    "nextjs-toploader": "^1.6.4",
     "react": "18",
-    "react-dom": "18"
+    "react-dom": "18",
+    "react-icons": "^4.11.0",
+    "react-progressbar": "^15.4.1",
+    "recharts": "^2.9.0"
   },
   "devDependencies": {
     "eslint": "8",
