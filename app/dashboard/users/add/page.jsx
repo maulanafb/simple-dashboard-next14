@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '@/app/ui/dashboard/users/addUser/addUser.module.css'
+import styles from '@/app/ui/dashboard/users/addUser/adduser.module.css'
 const AddUserPage = () => {
     return (
         <div className={styles.container}>
