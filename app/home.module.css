@@ -1,0 +1,4 @@
+.button:hover {
+  transform: rotate(36000deg);
+  transition-duration: 30000ms;
+}
