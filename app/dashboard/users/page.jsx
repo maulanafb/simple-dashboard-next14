@@ -36,7 +36,7 @@ const UsersPage = () => {
                         <td>Active</td>
                         <td>
                             <div className={styles.buttons}>
-                                <Link href={"/"}>
+                                <Link href={"/dashboard/users/1231"}>
                                     <button className={`${styles.button} ${styles.view}`}>View</button>
                                 </Link>
                                 <Link href={"/"}>

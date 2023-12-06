@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.imgContainer {
+  width: 100%;
+  height: 270px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: var(--bgSoft);
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: var(--textSoft);
+  height: max-content;
+}
+
+.formContainer {
+  background-color: var(--bgSoft);
+  flex: 3;
+  padding: 20px;
+  border-radius: 10px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input,
+.form textarea,
+.form select {
+  padding: 20px;
+  border: 2px solid #2e374a;
+  border-radius: 5px;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 10px 0;
+}
+
+.form label {
+  font-size: 12px;
+}
+
+.form button {
+  width: 100%;
+  padding: 20px;
+  background-color: teal;
+  color: var(--text);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.title {
+  padding-top: 20px;
+}
