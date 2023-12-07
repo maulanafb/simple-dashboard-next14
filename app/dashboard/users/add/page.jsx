@@ -10,13 +10,13 @@ const AddUserPage = () => {
 
                 <input type="password" placeholder='password' name='password' required />
                 <input type="number" placeholder='phone' name='phone' />
-                <select name="isAdmin" id="isAdmin">
-                    <option value={false} >Is Admin?</option>
+                <select name="isAdmin" id="isAdmin" required>
+                    <option value="" >Is Admin?</option>
                     <option value={true}>Yes</option>
                     <option value={false}>No</option>
                 </select>
-                <select name="isActive" id="isActive">
-                    <option value={true} >Is Active?</option>
+                <select name="isActive" id="isActive" required>
+                    <option value="" >Is Active?</option>
                     <option value={true}>Yes</option>
                     <option value={false}>No</option>
                 </select>

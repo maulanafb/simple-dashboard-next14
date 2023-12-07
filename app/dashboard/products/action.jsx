@@ -7,6 +7,7 @@ import { revalidatePath } from "next/cache";
 import Image from "next/image";
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import Tr from "./tr";
 
 export const fetchProducts = async (q, page) => {
 
@@ -17,26 +18,7 @@ export const fetchProducts = async (q, page) => {
         const count = await Product.find({ title: { $regex: regex } }).count();
         const products = await Product.find({ title: { $regex: regex } }).limit(ITEM_PER_PAGE).skip(ITEM_PER_PAGE * (page - 1));
         const data = products.map((product) => (
-            <tr key={product.title}>
-                <td>
-                    <div className={styles.product}><Image alt='logo' src={`${product.img ? product.img : '/noproduct.jpg'}`} width={40} height={40} className={styles.productImage} />{product.title}</div>
-                </td>
-                <td>{product.desc}</td>
-                <td>{product.price}</td>
-                <td>{product.createdAt.toString().slice(4, 16)}</td>
-                <td>{product.price}</td>
-                <td>
-                    <div className={styles.buttons}>
-                        <Link href={`/dashboard/products/${product.id}`}>
-                            <button className={`${styles.button} ${styles.view}`}>View</button>
-                        </Link>
-                        <form action={deleteProduct}>
-                            <input type="hidden" value={product.id} name="id" />
-                            <button className={`${styles.button} ${styles.delete}`} type="submit">Delete</button>
-                        </form>
-                    </div>
-                </td>
-            </tr>
+            <Tr product={product} />
         ));
         return { count, data };
     } catch (error) {
