@@ -5,9 +5,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Pagination from '@/app/ui/dashboard/pagination/pagination'
 import { fetchUsers } from '@/app/lib/data'
-const UsersPage = async () => {
-    const users = await fetchUsers()
-    console.log(users)
+const UsersPage = async ({ searchParams }) => {
+    const q = searchParams?.q || ""
+    const users = await fetchUsers(q)
     return (
 
         <div className={styles.container}>
@@ -32,7 +32,7 @@ const UsersPage = async () => {
                     {users.map((user) => (
                         <tr>
                             <td>
-                                <div className={styles.user}><Image src={`${user.img ? user.img : '/noavatar.png'}`} width={40} height={40} className={styles.userImage} />{user.username}</div>
+                                <div className={styles.user}><Image alt='avatar' src={`${user.img ? user.img : '/noavatar.png'}`} width={40} height={40} className={styles.userImage} />{user.username}</div>
                             </td>
                             <td>{user.email}</td>
                             <td>{user.createdAt.toString().slice(4, 16)}</td>

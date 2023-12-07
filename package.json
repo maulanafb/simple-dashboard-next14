@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@next/eslint-plugin-next": "14.0.1",
+    "debounce": "^2.0.0",
     "mongoose": "^8.0.2",
     "next": "14.0.1",
     "nextjs-progressbar": "^0.0.16",
