@@ -30,7 +30,13 @@ const UsersPage = async ({ searchParams }) => {
                     </tr>
                 </thead>
                 <tbody>
-                    {data}
+                    {count > 0 ? data : (
+                        <tr>
+                            <td colSpan={6} style={{ textAlign: 'center' }}>
+                                Data pencarian "{q}" tidak ditemukan
+                            </td>
+                        </tr>
+                    )}
                 </tbody>
             </table>
             <Pagination count={count} />

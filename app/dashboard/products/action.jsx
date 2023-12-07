@@ -3,8 +3,10 @@
 import { Product } from "@/app/lib/productModel";
 import { connectToDB } from "@/app/lib/utils";
 import styles from '@/app/ui/dashboard/products/products.module.css'
+import { revalidatePath } from "next/cache";
 import Image from "next/image";
 import Link from "next/link";
+import { redirect } from "next/navigation";
 
 export const fetchProducts = async (q, page) => {
 
@@ -28,9 +30,10 @@ export const fetchProducts = async (q, page) => {
                         <Link href={`/dashboard/products/${product.id}`}>
                             <button className={`${styles.button} ${styles.view}`}>View</button>
                         </Link>
-                        <Link href={"/"}>
-                            <button className={`${styles.button} ${styles.delete}`}>Delete</button>
-                        </Link>
+                        <form action={deleteProduct}>
+                            <input type="hidden" value={product.id} name="id" />
+                            <button className={`${styles.button} ${styles.delete}`} type="submit">Delete</button>
+                        </form>
                     </div>
                 </td>
             </tr>
@@ -40,4 +43,33 @@ export const fetchProducts = async (q, page) => {
         console.log(error)
         throw new Error("failed to fetch Product")
     }
+}
+
+export const addProduct = async (formData) => {
+    const { title, desc, price, stock, color, size } = Object.fromEntries(formData)
+
+    try {
+        connectToDB()
+        const newProduct = new Product({
+            title, desc, price, stock, color, size
+        })
+        await newProduct.save()
+    } catch (error) {
+        console.log(error)
+        throw new Error(error)
+    }
+    revalidatePath("/dashboard/products")
+    redirect("/dashboard/products")
+}
+
+export const deleteProduct = async (formData) => {
+    const { id } = Object.fromEntries(formData)
+    try {
+        connectToDB()
+        await Product.findByIdAndDelete(id)
+    } catch (error) {
+        console.log(error)
+        throw new Error("anjay")
+    }
+    revalidatePath("/dashboard/products")
 }
