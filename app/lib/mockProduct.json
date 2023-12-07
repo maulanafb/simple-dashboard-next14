@@ -1,0 +1,112 @@
+[
+  {
+    "title": "Product 1",
+    "desc": "Description for Product 1",
+    "price": 19.99,
+    "img": "https://plus.unsplash.com/premium_photo-1675896084254-dcb626387e1e?q=80&w=1535&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "color": "Blue",
+    "stock": 50,
+    "size": "Medium",
+    "createdAt": "2023-12-07T00:00:00Z",
+    "updatedAt": "2023-12-07T00:00:00Z"
+  },
+  {
+    "title": "Product 2",
+    "desc": "Description for Product 2",
+    "price": 29.99,
+    "img": "https://plus.unsplash.com/premium_photo-1675896084254-dcb626387e1e?q=80&w=1535&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "color": "Red",
+    "stock": 30,
+    "size": "Large",
+    "createdAt": "2023-12-07T00:00:00Z",
+    "updatedAt": "2023-12-07T00:00:00Z"
+  },
+  {
+    "title": "Product 3",
+    "desc": "Description for Product 3",
+    "price": 39.99,
+    "img": "https://plus.unsplash.com/premium_photo-1675896084254-dcb626387e1e?q=80&w=1535&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "color": "Green",
+    "stock": 25,
+    "size": "Small",
+    "createdAt": "2023-12-07T00:00:00Z",
+    "updatedAt": "2023-12-07T00:00:00Z"
+  },
+  {
+    "title": "Product 4",
+    "desc": "Description for Product 4",
+    "price": 49.99,
+    "img": "https://plus.unsplash.com/premium_photo-1675896084254-dcb626387e1e?q=80&w=1535&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "color": "Black",
+    "stock": 40,
+    "size": "XL",
+    "createdAt": "2023-12-07T00:00:00Z",
+    "updatedAt": "2023-12-07T00:00:00Z"
+  },
+  {
+    "title": "Product 5",
+    "desc": "Description for Product 5",
+    "price": 59.99,
+    "img": "https://plus.unsplash.com/premium_photo-1675896084254-dcb626387e1e?q=80&w=1535&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "color": "Yellow",
+    "stock": 20,
+    "size": "Small",
+    "createdAt": "2023-12-07T00:00:00Z",
+    "updatedAt": "2023-12-07T00:00:00Z"
+  },
+  {
+    "title": "Product 6",
+    "desc": "Description for Product 6",
+    "price": 69.99,
+    "img": "https://plus.unsplash.com/premium_photo-1675896084254-dcb626387e1e?q=80&w=1535&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "color": "White",
+    "stock": 15,
+    "size": "Medium",
+    "createdAt": "2023-12-07T00:00:00Z",
+    "updatedAt": "2023-12-07T00:00:00Z"
+  },
+  {
+    "title": "Product 7",
+    "desc": "Description for Product 7",
+    "price": 79.99,
+    "img": "https://plus.unsplash.com/premium_photo-1675896084254-dcb626387e1e?q=80&w=1535&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "color": "Purple",
+    "stock": 35,
+    "size": "Large",
+    "createdAt": "2023-12-07T00:00:00Z",
+    "updatedAt": "2023-12-07T00:00:00Z"
+  },
+  {
+    "title": "Product 8",
+    "desc": "Description for Product 8",
+    "price": 89.99,
+    "img": "https://plus.unsplash.com/premium_photo-1675896084254-dcb626387e1e?q=80&w=1535&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "color": "Orange",
+    "stock": 10,
+    "size": "XL",
+    "createdAt": "2023-12-07T00:00:00Z",
+    "updatedAt": "2023-12-07T00:00:00Z"
+  },
+  {
+    "title": "Product 9",
+    "desc": "Description for Product 9",
+    "price": 99.99,
+    "img": "https://plus.unsplash.com/premium_photo-1675896084254-dcb626387e1e?q=80&w=1535&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "color": "Pink",
+    "stock": 30,
+    "size": "Medium",
+    "createdAt": "2023-12-07T00:00:00Z",
+    "updatedAt": "2023-12-07T00:00:00Z"
+  },
+  {
+    "title": "Product 10",
+    "desc": "Description for Product 10",
+    "price": 109.99,
+    "img": "https://plus.unsplash.com/premium_photo-1675896084254-dcb626387e1e?q=80&w=1535&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "color": "Brown",
+    "stock": 25,
+    "size": "Large",
+    "createdAt": "2023-12-07T00:00:00Z",
+    "updatedAt": "2023-12-07T00:00:00Z"
+  }
+]
