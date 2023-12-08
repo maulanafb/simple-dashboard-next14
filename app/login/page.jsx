@@ -4,7 +4,7 @@ const Login = () => {
     return (
         <div className={styles.container}>
             <form action="" className={styles.form}>
-                <h1>Login</h1>
+                <h1>Login Dashboard</h1>
                 <input type="text" name='username' placeholder='username' />
                 <input type="password" name='password' placeholder='password' />
                 <button className={styles.button}>Login</button>
